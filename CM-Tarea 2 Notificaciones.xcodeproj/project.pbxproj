@@ -15,6 +15,7 @@
 		6C0E2E8A1B370D5B00C0A435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E891B370D5B00C0A435 /* Images.xcassets */; };
 		6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */; };
 		6C0E2E991B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E981B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m */; };
+		EC5B6A421B3A3A100065EABD /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6A411B3A3A100065EABD /* Detail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		6C0E2E921B370D5B00C0A435 /* CM-Tarea 2 NotificacionesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CM-Tarea 2 NotificacionesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0E2E971B370D5B00C0A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C0E2E981B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CM_Tarea_2_NotificacionesTests.m; sourceTree = "<group>"; };
+		EC5B6A401B3A3A100065EABD /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		EC5B6A411B3A3A100065EABD /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,9 @@
 		6C0E2E781B370D5B00C0A435 /* CM-Tarea 2 Notificaciones */ = {
 			isa = PBXGroup;
 			children = (
-				6C0E2E7D1B370D5B00C0A435 /* AppDelegate.h */,
+				EC3CFC851B3907B400396B58 /* Controllers */,
 				6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */,
+				6C0E2E7D1B370D5B00C0A435 /* AppDelegate.h */,
 				6C0E2E831B370D5B00C0A435 /* ViewController.h */,
 				6C0E2E841B370D5B00C0A435 /* ViewController.m */,
 				6C0E2E861B370D5B00C0A435 /* Main.storyboard */,
@@ -120,6 +124,15 @@
 				6C0E2E971B370D5B00C0A435 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC3CFC851B3907B400396B58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B6A401B3A3A100065EABD /* Detail.h */,
+				EC5B6A411B3A3A100065EABD /* Detail.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5B6A421B3A3A100065EABD /* Detail.m in Sources */,
 				6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */,
 				6C0E2E821B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld in Sources */,
 				6C0E2E851B370D5B00C0A435 /* ViewController.m in Sources */,
@@ -416,6 +430,7 @@
 				6C0E2E9E1B370D5B00C0A435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C0E2E9F1B370D5B00C0A435 /* Build configuration list for PBXNativeTarget "CM-Tarea 2 NotificacionesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				6C0E2EA11B370D5B00C0A435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
