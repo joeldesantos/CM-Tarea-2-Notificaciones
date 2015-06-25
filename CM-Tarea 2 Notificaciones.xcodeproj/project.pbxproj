@@ -20,6 +20,8 @@
 		727919C51B3AFF20009F6353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C41B3AFF20009F6353 /* ImageIO.framework */; };
 		727919C71B3AFF45009F6353 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C61B3AFF45009F6353 /* AVFoundation.framework */; };
 		727919C91B3AFF4C009F6353 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C81B3AFF4C009F6353 /* CoreLocation.framework */; };
+		EC2C238D1B3B921100EED42D /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C238C1B3B921100EED42D /* Intro.m */; };
+		EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C23901B3BBCA100EED42D /* Declarations.m */; };
 		EC5B6A421B3A3A100065EABD /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6A411B3A3A100065EABD /* Detail.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,10 @@
 		727919C41B3AFF20009F6353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		727919C61B3AFF45009F6353 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		727919C81B3AFF4C009F6353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC2C238B1B3B921100EED42D /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
+		EC2C238C1B3B921100EED42D /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
+		EC2C238F1B3BBCA100EED42D /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		EC2C23901B3BBCA100EED42D /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 		EC5B6A401B3A3A100065EABD /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
 		EC5B6A411B3A3A100065EABD /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +112,7 @@
 		6C0E2E781B370D5B00C0A435 /* CM-Tarea 2 Notificaciones */ = {
 			isa = PBXGroup;
 			children = (
+				EC2C238E1B3BBC0000EED42D /* Main */,
 				EC3CFC851B3907B400396B58 /* Controllers */,
 				6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */,
 				6C0E2E7D1B370D5B00C0A435 /* AppDelegate.h */,
@@ -146,11 +153,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EC2C238E1B3BBC0000EED42D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C238F1B3BBCA100EED42D /* Declarations.h */,
+				EC2C23901B3BBCA100EED42D /* Declarations.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		EC3CFC851B3907B400396B58 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EC5B6A401B3A3A100065EABD /* Detail.h */,
 				EC5B6A411B3A3A100065EABD /* Detail.m */,
+				EC2C238B1B3B921100EED42D /* Intro.h */,
+				EC2C238C1B3B921100EED42D /* Intro.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -261,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2C238D1B3B921100EED42D /* Intro.m in Sources */,
 				EC5B6A421B3A3A100065EABD /* Detail.m in Sources */,
 				6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */,
+				EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */,
 				6C0E2E821B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld in Sources */,
 				6C0E2E851B370D5B00C0A435 /* ViewController.m in Sources */,
 				6C0E2E7C1B370D5B00C0A435 /* main.m in Sources */,
