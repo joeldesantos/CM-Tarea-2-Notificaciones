@@ -10,7 +10,7 @@
 		6C0E2E7C1B370D5B00C0A435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E7B1B370D5B00C0A435 /* main.m */; };
 		6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */; };
 		6C0E2E821B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E801B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld */; };
-		6C0E2E851B370D5B00C0A435 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E841B370D5B00C0A435 /* ViewController.m */; };
+		6C0E2E851B370D5B00C0A435 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E841B370D5B00C0A435 /* Start.m */; };
 		6C0E2E881B370D5B00C0A435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E861B370D5B00C0A435 /* Main.storyboard */; };
 		6C0E2E8A1B370D5B00C0A435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E891B370D5B00C0A435 /* Images.xcassets */; };
 		6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */; };
@@ -42,8 +42,8 @@
 		6C0E2E7D1B370D5B00C0A435 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6C0E2E811B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CM_Tarea_2_Notificaciones.xcdatamodel; sourceTree = "<group>"; };
-		6C0E2E831B370D5B00C0A435 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6C0E2E841B370D5B00C0A435 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C0E2E831B370D5B00C0A435 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		6C0E2E841B370D5B00C0A435 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		6C0E2E871B370D5B00C0A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C0E2E891B370D5B00C0A435 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C0E2E8C1B370D5B00C0A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,10 +114,6 @@
 			children = (
 				EC2C238E1B3BBC0000EED42D /* Main */,
 				EC3CFC851B3907B400396B58 /* Controllers */,
-				6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */,
-				6C0E2E7D1B370D5B00C0A435 /* AppDelegate.h */,
-				6C0E2E831B370D5B00C0A435 /* ViewController.h */,
-				6C0E2E841B370D5B00C0A435 /* ViewController.m */,
 				6C0E2E861B370D5B00C0A435 /* Main.storyboard */,
 				6C0E2E891B370D5B00C0A435 /* Images.xcassets */,
 				6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */,
@@ -156,6 +152,8 @@
 		EC2C238E1B3BBC0000EED42D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6C0E2E7D1B370D5B00C0A435 /* AppDelegate.h */,
+				6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */,
 				EC2C238F1B3BBCA100EED42D /* Declarations.h */,
 				EC2C23901B3BBCA100EED42D /* Declarations.m */,
 			);
@@ -169,6 +167,8 @@
 				EC5B6A411B3A3A100065EABD /* Detail.m */,
 				EC2C238B1B3B921100EED42D /* Intro.h */,
 				EC2C238C1B3B921100EED42D /* Intro.m */,
+				6C0E2E831B370D5B00C0A435 /* Start.h */,
+				6C0E2E841B370D5B00C0A435 /* Start.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 				6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */,
 				EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */,
 				6C0E2E821B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld in Sources */,
-				6C0E2E851B370D5B00C0A435 /* ViewController.m in Sources */,
+				6C0E2E851B370D5B00C0A435 /* Start.m in Sources */,
 				6C0E2E7C1B370D5B00C0A435 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
