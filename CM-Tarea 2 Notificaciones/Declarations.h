@@ -12,7 +12,6 @@ extern NSMutableArray   *maIntroTitles;
 extern NSMutableArray   *maIntroImgs;
 extern NSMutableArray   *maGovernors;
 extern NSMutableArray   *maImgsPoliticalParties;
-extern NSMutableArray   *maImgsPoliticalParties;
 
 @interface Declarations : NSObject
 

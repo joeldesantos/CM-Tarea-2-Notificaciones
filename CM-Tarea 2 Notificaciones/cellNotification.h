@@ -11,7 +11,7 @@
 @interface cellNotification : UITableViewCell
 
 //Objects
-@property (strong, nonatomic) IBOutlet UIImageView *imgTeam;
+@property (strong, nonatomic) IBOutlet UIImageView *imgPoliticalParty;
 @property (strong, nonatomic) IBOutlet UILabel *lblTeam;
 @property (strong, nonatomic) IBOutlet UILabel *lblWon;
 @property (strong, nonatomic) IBOutlet UILabel *lblLost;
