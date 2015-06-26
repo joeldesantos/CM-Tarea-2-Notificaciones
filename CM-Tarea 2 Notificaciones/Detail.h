@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *politicalParty;
 @property (weak, nonatomic) IBOutlet UILabel *state;
+//
 
 @end
