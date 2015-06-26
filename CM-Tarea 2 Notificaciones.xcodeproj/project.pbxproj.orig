@@ -11,7 +11,6 @@
 		6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */; };
 		6C0E2E821B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E801B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld */; };
 		6C0E2E851B370D5B00C0A435 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E841B370D5B00C0A435 /* Start.m */; };
-		6C0E2E881B370D5B00C0A435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E861B370D5B00C0A435 /* Main.storyboard */; };
 		6C0E2E8A1B370D5B00C0A435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E891B370D5B00C0A435 /* Images.xcassets */; };
 		6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */; };
 		6C0E2E991B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E981B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m */; };
@@ -20,9 +19,14 @@
 		727919C51B3AFF20009F6353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C41B3AFF20009F6353 /* ImageIO.framework */; };
 		727919C71B3AFF45009F6353 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C61B3AFF45009F6353 /* AVFoundation.framework */; };
 		727919C91B3AFF4C009F6353 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C81B3AFF4C009F6353 /* CoreLocation.framework */; };
+<<<<<<< HEAD
+		EC272D791B3CF10500BABC30 /* intro_01.png in Resources */ = {isa = PBXBuildFile; fileRef = EC272D781B3CF10500BABC30 /* intro_01.png */; };
+		EC272D7B1B3CF32900BABC30 /* intro_02.png in Resources */ = {isa = PBXBuildFile; fileRef = EC272D7A1B3CF32900BABC30 /* intro_02.png */; };
+=======
 		812176231B3CDDBE002570EB /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 812176221B3CDDBE002570EB /* Home.m */; };
 		8121762D1B3CE495002570EB /* cellNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8121762B1B3CE495002570EB /* cellNotification.m */; };
 		8121762E1B3CE495002570EB /* cellNotification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8121762C1B3CE495002570EB /* cellNotification.xib */; };
+>>>>>>> 0492c95eedbdfbb801df93d00f888991fb6dccbf
 		EC2C238D1B3B921100EED42D /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C238C1B3B921100EED42D /* Intro.m */; };
 		EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C23901B3BBCA100EED42D /* Declarations.m */; };
 		EC5B6A421B3A3A100065EABD /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6A411B3A3A100065EABD /* Detail.m */; };
@@ -60,11 +64,16 @@
 		727919C41B3AFF20009F6353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		727919C61B3AFF45009F6353 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		727919C81B3AFF4C009F6353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+<<<<<<< HEAD
+		EC272D781B3CF10500BABC30 /* intro_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro_01.png; sourceTree = "<group>"; };
+		EC272D7A1B3CF32900BABC30 /* intro_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro_02.png; sourceTree = "<group>"; };
+=======
 		812176211B3CDD64002570EB /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		812176221B3CDDBE002570EB /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		8121762A1B3CE495002570EB /* cellNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellNotification.h; sourceTree = "<group>"; };
 		8121762B1B3CE495002570EB /* cellNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellNotification.m; sourceTree = "<group>"; };
 		8121762C1B3CE495002570EB /* cellNotification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellNotification.xib; sourceTree = "<group>"; };
+>>>>>>> 0492c95eedbdfbb801df93d00f888991fb6dccbf
 		EC2C238B1B3B921100EED42D /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		EC2C238C1B3B921100EED42D /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 		EC2C238F1B3BBCA100EED42D /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
@@ -286,8 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
 				8121762E1B3CE495002570EB /* cellNotification.xib in Resources */,
 				6C0E2E881B370D5B00C0A435 /* Main.storyboard in Resources */,
+>>>>>>> 0492c95eedbdfbb801df93d00f888991fb6dccbf
 				6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */,
 				EC272D791B3CF10500BABC30 /* intro_01.png in Resources */,
 				ECDAF9F71B3CFF1600245180 /* intro_03.png in Resources */,
