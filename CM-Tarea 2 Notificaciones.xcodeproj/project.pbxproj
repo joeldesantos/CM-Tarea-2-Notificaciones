@@ -15,6 +15,8 @@
 		6C0E2E8A1B370D5B00C0A435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E891B370D5B00C0A435 /* Images.xcassets */; };
 		6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */; };
 		6C0E2E991B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E2E981B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m */; };
+		6C7217F31B3DA81C00728931 /* Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7217F11B3DA81C00728931 /* Add.m */; };
+		6C7217F41B3DA81C00728931 /* Add.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C7217F21B3DA81C00728931 /* Add.xib */; };
 		727919C11B3AF430009F6353 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C01B3AF430009F6353 /* Pushwoosh.framework */; };
 		727919C31B3AFF03009F6353 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C21B3AFF03009F6353 /* SystemConfiguration.framework */; };
 		727919C51B3AFF20009F6353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C41B3AFF20009F6353 /* ImageIO.framework */; };
@@ -55,6 +57,9 @@
 		6C0E2E921B370D5B00C0A435 /* CM-Tarea 2 NotificacionesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CM-Tarea 2 NotificacionesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0E2E971B370D5B00C0A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C0E2E981B370D5B00C0A435 /* CM_Tarea_2_NotificacionesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CM_Tarea_2_NotificacionesTests.m; sourceTree = "<group>"; };
+		6C7217F01B3DA81C00728931 /* Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Add.h; sourceTree = "<group>"; };
+		6C7217F11B3DA81C00728931 /* Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Add.m; sourceTree = "<group>"; };
+		6C7217F21B3DA81C00728931 /* Add.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Add.xib; sourceTree = "<group>"; };
 		727919C01B3AF430009F6353 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		727919C21B3AFF03009F6353 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		727919C41B3AFF20009F6353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -101,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				ECDAF9F61B3CFF1600245180 /* intro_03.png */,
-				EC272D7A1B3CF32900BABC30 /* intro_02.png */,
-				EC272D781B3CF10500BABC30 /* intro_01.png */,
 				727919C81B3AFF4C009F6353 /* CoreLocation.framework */,
 				727919C61B3AFF45009F6353 /* AVFoundation.framework */,
 				727919C41B3AFF20009F6353 /* ImageIO.framework */,
@@ -196,6 +199,9 @@
 				6C0E2E841B370D5B00C0A435 /* Start.m */,
 				812176211B3CDD64002570EB /* Home.h */,
 				812176221B3CDDBE002570EB /* Home.m */,
+				6C7217F01B3DA81C00728931 /* Add.h */,
+				6C7217F11B3DA81C00728931 /* Add.m */,
+				6C7217F21B3DA81C00728931 /* Add.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -287,12 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8121762E1B3CE495002570EB /* cellNotification.xib in Resources */,
+				6C7217F41B3DA81C00728931 /* Add.xib in Resources */,
 				6C0E2E881B370D5B00C0A435 /* Main.storyboard in Resources */,
 				6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */,
-				EC272D791B3CF10500BABC30 /* intro_01.png in Resources */,
 				ECDAF9F71B3CFF1600245180 /* intro_03.png in Resources */,
 				ECDAF9F81B3D020D00245180 /* Main.storyboard in Resources */,
-				EC272D7B1B3CF32900BABC30 /* intro_02.png in Resources */,
 				6C0E2E8A1B370D5B00C0A435 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +319,7 @@
 				EC2C238D1B3B921100EED42D /* Intro.m in Sources */,
 				EC5B6A421B3A3A100065EABD /* Detail.m in Sources */,
 				812176231B3CDDBE002570EB /* Home.m in Sources */,
+				6C7217F31B3DA81C00728931 /* Add.m in Sources */,
 				6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */,
 				EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */,
 				8121762D1B3CE495002570EB /* cellNotification.m in Sources */,
