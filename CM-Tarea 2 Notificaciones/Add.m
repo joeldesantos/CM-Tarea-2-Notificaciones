@@ -13,15 +13,31 @@
 @end
 
 @implementation Add
-
+/**********************************************************************************************/
+#pragma mark - Initialization methods
+/**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self initController];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initController {
+    self.AddImage.image  = nil;
+    self.AddName.text  = NSString.new;
+    self.AddParty.text  = NSString.new;
+    self.AddState.accessibilityValue  = NSString.new;
+}
+/**********************************************************************************************/
+#pragma mark - Buttons methods
+/**********************************************************************************************/
+- (IBAction)btnBackPressed:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

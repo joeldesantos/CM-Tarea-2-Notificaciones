@@ -7,12 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIDropDownMenu.h"
 
-@interface Add : UIViewController
+@interface Add : UIViewController<UIDropDownMenuDelegate>{
+    IBOutlet UIImageView *AddImage;
+    
+    IBOutlet UITextField *AddName;
+    IBOutlet UITextField *AddParty;
+    IBOutlet UITextField *AddState;
+    
+    IBOutlet UIButton *AddButton;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *AddImage;
 - (IBAction)AddImageAction:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextField *AddName;
 @property (weak, nonatomic) IBOutlet UITextField *AddParty;
-@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *AddState;
+@property (weak, nonatomic) IBOutlet UITextField *AddState;
+
+@property (weak, nonatomic) IBOutlet UIButton *AddButton;
+
 @end
