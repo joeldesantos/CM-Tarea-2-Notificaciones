@@ -11,9 +11,8 @@
 @interface Detail : UIViewController
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationView;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *name;
-@property (weak, nonatomic) IBOutlet UILabel *politicalParty;
+@property (weak, nonatomic) IBOutlet UIImageView *politicalParty;
 @property (weak, nonatomic) IBOutlet UILabel *state;
 //
 

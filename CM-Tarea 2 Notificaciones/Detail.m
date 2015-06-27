@@ -7,6 +7,7 @@
 //
 
 #import "Detail.h"
+#import "Declarations.h"
 
 @interface Detail ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initController];// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +25,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)initController {
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone
+                            target:self
+                            action:@selector(closeThisView:)];
+    
+    UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:maGovernors[1]];
+    item.rightBarButtonItem = backButton;
+    item.hidesBackButton = YES;
+    [self.navigationView pushNavigationItem:item animated:NO];
+    
+    self.navigationItem.rightBarButtonItem = backButton;
+
+    
+}
 /*
 #pragma mark - Navigation
 

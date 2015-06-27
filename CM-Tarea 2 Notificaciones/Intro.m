@@ -8,7 +8,7 @@
 
 #import "Intro.h"
 #import "Declarations.h"
-#import "Detail.h"
+#import "Home.h"
 
 @interface Intro ()
 
@@ -42,9 +42,9 @@
 //-------------------------------------------------------------------------------
 - (IBAction)btnIntroPressed:(id)sender
 {
-    /*Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
     [self presentViewController:vc animated:YES completion:nil];
-     */
-    Detail *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Detail"];
-    [self presentViewController:vc animated:YES completion:nil];}
+}
+    
 @end
+

@@ -9,6 +9,7 @@
 #import "Home.h"
 #import "Declarations.h"
 #import "cellNotification.h"
+#import "Detail.h"
 
 @interface Home ()
 
@@ -62,15 +63,21 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellNotification"];
     }
     //Fill cell with info from arrays
-    cell.lblTeam.text   = maGovernors[indexPath.row];
+    cell.lblGovernor.text   = maGovernors[indexPath.row];
+    cell.lblState.text      = maStates[indexPath.row];
     //cell.maImgsPoliticalParties.image  = [UIImage imageNamed:maImgsGobs[indexPath.row]];
-    cell.imgPoliticalParty.image  = [UIImage imageNamed:maImgsPoliticalParties[indexPath.row]];
+   // cell.imgPoliticalParty.image  = [UIImage imageNamed:maImgsPoliticalParties[indexPath.row]];
     
     return cell;
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*mGovernorIndex = (int) indexPath.row;
+    Detail *detailsView = [[UIStoryboard storyboardWithName:@"Main"
+                                                                bundle:nil]
+                                      instantiateViewControllerWithIdentifier:@"Detail"];
     
-}
+    [self presentViewController:detailsView animated:YES completion:nil];*/
+     }
 @end
