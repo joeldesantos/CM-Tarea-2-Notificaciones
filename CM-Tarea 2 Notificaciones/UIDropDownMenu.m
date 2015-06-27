@@ -18,16 +18,15 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation UIDropDownMenu
-/*
- @synthesize dropdownTable, parentView, singleTapGestureRecogniser, targetObject, selectedTextField, selectedButton, titleArray, valueArray, ScaleToFitParent, selectedValue, menuWidth, delegate, textColor, backgroundColor, borderColor, identifiername, rowHeight;
+
+@synthesize dropdownTable, parentView, singleTapGestureRecogniser, targetObject, selectedTextField, selectedButton, titleArray, valueArray, ScaleToFitParent, selectedValue, menuWidth, delegate, textColor, backgroundColor, borderColor, identifiername, rowHeight;
 
 UIInterfaceOrientation orientation;
-*/
+
 
 
 - (id) initWithIdentifier:(NSString *)identifier
 {
-    /*
      if (self = [super init])
     {
         self.identifiername = identifier;
@@ -56,11 +55,10 @@ UIInterfaceOrientation orientation;
         self.dropdownTable.backgroundColor = backgroundColor;
         
     }
-     */
     return self;
 }
 
-/*
+
 -(void)makeMenu:(NSObject *)targetObj targetView:(UIView *)tview;
 {
     if (titleArray != nil && valueArray != nil){
@@ -319,6 +317,6 @@ UIInterfaceOrientation orientation;
     self.dropdownTable.alpha = 1.0;
     [self dismissMenu];
 }
-*/
+
 
 @end

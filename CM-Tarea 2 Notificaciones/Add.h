@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIDropDownMenu.h"
+#import "Declarations.h"
 
 @interface Add : UIViewController<UIDropDownMenuDelegate>{
     IBOutlet UIImageView *AddImage;
@@ -27,5 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *AddState;
 
 @property (weak, nonatomic) IBOutlet UIButton *AddButton;
+
+@property (strong, nonatomic) UIDropDownMenu *buttonMenu;
 
 @end

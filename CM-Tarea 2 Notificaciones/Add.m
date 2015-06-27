@@ -28,9 +28,17 @@
 
 - (void)initController {
     self.AddImage.image  = nil;
-    self.AddName.text  = NSString.new;
-    self.AddParty.text  = NSString.new;
-    self.AddState.accessibilityValue  = NSString.new;
+    self.AddName.text  = @"";
+    self.AddParty.text  = @"";
+    self.AddState.accessibilityValue  = @"Selecciona";
+    
+    self.buttonMenu = [[UIDropDownMenu alloc] initWithIdentifier:@"buttonMenu"];
+    self.buttonMenu.ScaleToFitParent = FALSE;
+    self.buttonMenu.menuWidth = 200;
+    self.buttonMenu.titleArray = maStates;
+    self.buttonMenu.valueArray = maStates;
+    [self.buttonMenu makeMenu:AddState targetView:self.view];
+    self.buttonMenu.delegate = self;
 }
 /**********************************************************************************************/
 #pragma mark - Buttons methods
