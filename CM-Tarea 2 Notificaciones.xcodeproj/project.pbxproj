@@ -21,6 +21,7 @@
 		6C7217FC1B3E461100728931 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7217FB1B3E461100728931 /* UIKit.framework */; };
 		6C7217FE1B3E465700728931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7217FD1B3E465700728931 /* Foundation.framework */; };
 		6C7218001B3E466100728931 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7217FF1B3E466100728931 /* CoreGraphics.framework */; };
+		6C7218471B3ED21900728931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7218451B3ED21900728931 /* Main.storyboard */; };
 		727919C11B3AF430009F6353 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C01B3AF430009F6353 /* Pushwoosh.framework */; };
 		727919C31B3AFF03009F6353 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C21B3AFF03009F6353 /* SystemConfiguration.framework */; };
 		727919C51B3AFF20009F6353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C41B3AFF20009F6353 /* ImageIO.framework */; };
@@ -35,7 +36,6 @@
 		EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C23901B3BBCA100EED42D /* Declarations.m */; };
 		EC5B6A421B3A3A100065EABD /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6A411B3A3A100065EABD /* Detail.m */; };
 		ECDAF9F71B3CFF1600245180 /* intro_03.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDAF9F61B3CFF1600245180 /* intro_03.png */; };
-		ECDAF9F81B3D020D00245180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E2E861B370D5B00C0A435 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 		6C0E2E811B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CM_Tarea_2_Notificaciones.xcdatamodel; sourceTree = "<group>"; };
 		6C0E2E831B370D5B00C0A435 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
 		6C0E2E841B370D5B00C0A435 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
-		6C0E2E871B370D5B00C0A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C0E2E891B370D5B00C0A435 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C0E2E8C1B370D5B00C0A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6C0E2E921B370D5B00C0A435 /* CM-Tarea 2 NotificacionesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CM-Tarea 2 NotificacionesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +70,7 @@
 		6C7217FB1B3E461100728931 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6C7217FD1B3E465700728931 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C7217FF1B3E466100728931 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6C7218461B3ED21900728931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		727919C01B3AF430009F6353 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		727919C21B3AFF03009F6353 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		727919C41B3AFF20009F6353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -153,7 +153,7 @@
 				EC2C238E1B3BBC0000EED42D /* Main */,
 				EC3CFC851B3907B400396B58 /* Controllers */,
 				812176241B3CE07D002570EB /* Cells */,
-				6C0E2E861B370D5B00C0A435 /* Main.storyboard */,
+				6C7218451B3ED21900728931 /* Main.storyboard */,
 				6C0E2E891B370D5B00C0A435 /* Images.xcassets */,
 				6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */,
 				6C0E2E801B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld */,
@@ -321,8 +321,8 @@
 				EC054F9A1B3E6899008E72A4 /* intro_02.png in Resources */,
 				EC054F981B3E6884008E72A4 /* intro_01.png in Resources */,
 				6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */,
+				6C7218471B3ED21900728931 /* Main.storyboard in Resources */,
 				ECDAF9F71B3CFF1600245180 /* intro_03.png in Resources */,
-				ECDAF9F81B3D020D00245180 /* Main.storyboard in Resources */,
 				6C0E2E8A1B370D5B00C0A435 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,10 +377,10 @@
 		6C0E2E861B370D5B00C0A435 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6C0E2E871B370D5B00C0A435 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = "/Users/Aleyr/Documents/Master/Cuatrimestre 03/Computo Movil/02 Tarea/CM-Test-Notificaciones/CM-Tarea 2 Notificaciones";
+			sourceTree = "<absolute>";
 		};
 		6C0E2E8B1B370D5B00C0A435 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
@@ -388,6 +388,14 @@
 				6C0E2E8C1B370D5B00C0A435 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6C7218451B3ED21900728931 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7218461B3ED21900728931 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
