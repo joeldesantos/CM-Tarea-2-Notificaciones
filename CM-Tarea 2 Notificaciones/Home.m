@@ -62,7 +62,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellNotification"];
     }
     //Fill cell with info from arrays
-    cell.lblTeam.text   = maGovernors[indexPath.row];
+    cell.lblGovernor.text   = maGovernors[indexPath.row];
     //cell.maImgsPoliticalParties.image  = [UIImage imageNamed:maImgsGobs[indexPath.row]];
     cell.imgPoliticalParty.image  = [UIImage imageNamed:maImgsPoliticalParties[indexPath.row]];
     
