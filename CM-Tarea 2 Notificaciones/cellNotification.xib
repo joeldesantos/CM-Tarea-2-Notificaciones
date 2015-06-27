@@ -27,25 +27,17 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charros.png" id="7o3-40-Gm7" userLabel="imgPliticalParty">
-                        <rect key="frame" x="265" y="8" width="48" height="47"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="imgPoliticalParty" destination="7o3-40-Gm7" id="41L-Ic-07g"/>
                 <outlet property="lblGovernor" destination="oKn-iB-axg" id="uyG-7g-0kt"/>
                 <outlet property="lblState" destination="gDA-84-1G0" id="QW4-0b-aoK"/>
             </connections>
             <point key="canvasLocation" x="283" y="242"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="charros.png" width="150" height="150"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
