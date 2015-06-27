@@ -21,7 +21,7 @@
 - (void) DropDownMenuDidChange:(NSString *)identifier :(NSString *)ReturnValue;
 @end
 
-@interface UIDropDownMenu : NSObject <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
+@interface UIDropDownMenu : NSObject /*<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 {
     // general objects
     UITableView *dropdownTable;
@@ -54,21 +54,26 @@
     
     
     id <UIDropDownMenuDelegate> delegate;
-}
+}*/
 
-
+/*
 @property (retain, nonatomic) UITableView *dropdownTable;
 @property (retain, nonatomic) UIView *parentView;
 @property (retain, nonatomic) UITapGestureRecognizer *singleTapGestureRecogniser;
+*/
 @property (retain, nonatomic) NSString *identifiername;
 @property (retain, nonatomic) NSObject *targetObject;
-@property (retain, nonatomic) UITextField *selectedTextField;
+/*
+ @property (retain, nonatomic) UITextField *selectedTextField;
 @property (retain, nonatomic) UIButton *selectedButton;
+*/
 @property (retain, nonatomic) NSMutableArray *titleArray;
 @property (retain, nonatomic) NSMutableArray *valueArray;
-@property (retain, nonatomic) UIColor *textColor;
+/*
+ @property (retain, nonatomic) UIColor *textColor;
 @property (retain, nonatomic) UIColor *backgroundColor;
 @property (retain, nonatomic) UIColor *borderColor;
+*/
 @property (nonatomic) BOOL ScaleToFitParent;
 @property (nonatomic) int menuWidth;
 @property (nonatomic) int rowHeight;
@@ -81,7 +86,7 @@
 
 
 - (id) initWithIdentifier:(NSString *)identifier;
--(void)makeMenu:(NSObject *)targetObject targetView:(UIView *)tview;
+//-(void)makeMenu:(NSObject *)targetObject targetView:(UIView *)tview;
 -(void)selectedObjectClicked:(id)sender;
 -(void)dismissMenu;
 @end
