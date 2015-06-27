@@ -29,6 +29,8 @@
 		812176231B3CDDBE002570EB /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 812176221B3CDDBE002570EB /* Home.m */; };
 		8121762D1B3CE495002570EB /* cellNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8121762B1B3CE495002570EB /* cellNotification.m */; };
 		8121762E1B3CE495002570EB /* cellNotification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8121762C1B3CE495002570EB /* cellNotification.xib */; };
+		EC054F981B3E6884008E72A4 /* intro_01.png in Resources */ = {isa = PBXBuildFile; fileRef = EC054F971B3E6884008E72A4 /* intro_01.png */; };
+		EC054F9A1B3E6899008E72A4 /* intro_02.png in Resources */ = {isa = PBXBuildFile; fileRef = EC054F991B3E6899008E72A4 /* intro_02.png */; };
 		EC2C238D1B3B921100EED42D /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C238C1B3B921100EED42D /* Intro.m */; };
 		EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C23901B3BBCA100EED42D /* Declarations.m */; };
 		EC5B6A421B3A3A100065EABD /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6A411B3A3A100065EABD /* Detail.m */; };
@@ -79,6 +81,8 @@
 		8121762A1B3CE495002570EB /* cellNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellNotification.h; sourceTree = "<group>"; };
 		8121762B1B3CE495002570EB /* cellNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellNotification.m; sourceTree = "<group>"; };
 		8121762C1B3CE495002570EB /* cellNotification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellNotification.xib; sourceTree = "<group>"; };
+		EC054F971B3E6884008E72A4 /* intro_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro_01.png; sourceTree = "<group>"; };
+		EC054F991B3E6899008E72A4 /* intro_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro_02.png; sourceTree = "<group>"; };
 		EC2C238B1B3B921100EED42D /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		EC2C238C1B3B921100EED42D /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 		EC2C238F1B3BBCA100EED42D /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
@@ -117,10 +121,12 @@
 		6C0E2E6D1B370D5B00C0A435 = {
 			isa = PBXGroup;
 			children = (
+				EC054F991B3E6899008E72A4 /* intro_02.png */,
+				EC054F971B3E6884008E72A4 /* intro_01.png */,
+				ECDAF9F61B3CFF1600245180 /* intro_03.png */,
 				6C7217FF1B3E466100728931 /* CoreGraphics.framework */,
 				6C7217FD1B3E465700728931 /* Foundation.framework */,
 				6C7217FB1B3E461100728931 /* UIKit.framework */,
-				ECDAF9F61B3CFF1600245180 /* intro_03.png */,
 				727919C81B3AFF4C009F6353 /* CoreLocation.framework */,
 				727919C61B3AFF45009F6353 /* AVFoundation.framework */,
 				727919C41B3AFF20009F6353 /* ImageIO.framework */,
@@ -312,6 +318,8 @@
 				8121762E1B3CE495002570EB /* cellNotification.xib in Resources */,
 				6C7217F41B3DA81C00728931 /* Add.xib in Resources */,
 				6C0E2E881B370D5B00C0A435 /* Main.storyboard in Resources */,
+				EC054F9A1B3E6899008E72A4 /* intro_02.png in Resources */,
+				EC054F981B3E6884008E72A4 /* intro_01.png in Resources */,
 				6C0E2E8D1B370D5B00C0A435 /* LaunchScreen.xib in Resources */,
 				ECDAF9F71B3CFF1600245180 /* intro_03.png in Resources */,
 				ECDAF9F81B3D020D00245180 /* Main.storyboard in Resources */,
