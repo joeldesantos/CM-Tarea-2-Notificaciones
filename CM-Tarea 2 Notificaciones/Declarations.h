@@ -10,13 +10,12 @@
 
 extern NSMutableArray   *maIntroTitles;
 extern NSMutableArray   *maIntroImgs;
-extern NSMutableArray   *maGovernors;
-extern NSMutableArray   *maStates;
 extern NSMutableArray   *maStatesList;
 extern NSMutableArray   *maImgsPoliticalPartiesList;
-extern NSMutableArray   *maImgsPoliticalParties;
 extern int mGovernorIndex;
 
-@interface Declarations : NSObject
+@interface Declarations : NSObject {
+    
+}
 
 @end

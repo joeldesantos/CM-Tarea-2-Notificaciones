@@ -28,6 +28,7 @@
 		6C7217FE1B3E465700728931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7217FD1B3E465700728931 /* Foundation.framework */; };
 		6C7218001B3E466100728931 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7217FF1B3E466100728931 /* CoreGraphics.framework */; };
 		6C7218471B3ED21900728931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7218451B3ED21900728931 /* Main.storyboard */; };
+		6CF629A91B40A52600128611 /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF629A81B40A52600128611 /* DataClass.m */; };
 		727919C11B3AF430009F6353 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C01B3AF430009F6353 /* Pushwoosh.framework */; };
 		727919C31B3AFF03009F6353 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C21B3AFF03009F6353 /* SystemConfiguration.framework */; };
 		727919C51B3AFF20009F6353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727919C41B3AFF20009F6353 /* ImageIO.framework */; };
@@ -83,6 +84,8 @@
 		6C7217FD1B3E465700728931 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C7217FF1B3E466100728931 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6C7218461B3ED21900728931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CF629A71B40A52600128611 /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataClass.h; sourceTree = "<group>"; };
+		6CF629A81B40A52600128611 /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataClass.m; sourceTree = "<group>"; };
 		727919C01B3AF430009F6353 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		727919C21B3AFF03009F6353 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		727919C41B3AFF20009F6353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -239,6 +242,8 @@
 				6C0E2E7E1B370D5B00C0A435 /* AppDelegate.m */,
 				EC2C238F1B3BBCA100EED42D /* Declarations.h */,
 				EC2C23901B3BBCA100EED42D /* Declarations.m */,
+				6CF629A71B40A52600128611 /* DataClass.h */,
+				6CF629A81B40A52600128611 /* DataClass.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				6C7217F31B3DA81C00728931 /* Add.m in Sources */,
 				6C0E2E7F1B370D5B00C0A435 /* AppDelegate.m in Sources */,
 				EC2C23911B3BBCA100EED42D /* Declarations.m in Sources */,
+				6CF629A91B40A52600128611 /* DataClass.m in Sources */,
 				8121762D1B3CE495002570EB /* CellNotification.m in Sources */,
 				6C7217FA1B3E41EC00728931 /* UIDropDownMenu.m in Sources */,
 				6C0E2E821B370D5B00C0A435 /* CM_Tarea_2_Notificaciones.xcdatamodeld in Sources */,

@@ -21,6 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *AddImage;
 - (IBAction)AddImageAction:(id)sender;
+- (IBAction)btnLeftImageAction:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *AddName;
 @property (weak, nonatomic) IBOutlet UITextField *AddState;

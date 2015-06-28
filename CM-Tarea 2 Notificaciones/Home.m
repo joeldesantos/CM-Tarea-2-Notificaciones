@@ -11,6 +11,7 @@
 #import "CellNotification.h"
 #import "Detail.h"
 #import "Add.h"
+#import "DataClass.h"
 
 @interface Home ()
 
@@ -35,15 +36,20 @@
     
     [self.tblMain registerNib:[UINib nibWithNibName:@"CellNotification" bundle:nil] forCellReuseIdentifier:@"CellNotification"];
     
-    maGovernors             = [[NSMutableArray alloc] initWithObjects:
-                               @"Carlos Lozano", @"Francisco Vega", @"Marcos Covarrubias", @"Fernando Ortega", @"Rubén Moreira",
-                               @"Mario Anguiano", @"Manuel Velasco", @"César Duarte", @"Miguel Mancera", @"Jorge Herrera",
-                               @"Miguel Márquez", @"Salvador Ortega", @"José Olvera", @"Aristóteles Sandoval", @"Eruviel Ávila",
-                               @"Salvador Jara", @"Graco Ramírez", @"Roberto Sandoval", @"Rodrigo Medina", @"Cabino Cué",
-                               @"Rafael Moreno", @"José Calzada", @"Roberto Borge", @"Fernando Toranzo", @"Mario López",
-                               @"Guillermo Padrés", @"Arturo Núnez", @"Egidio Torre", @"Mariano González", @"Javier Duarte",
-                               @"Rolando Zapata", @"Miguel Alonso", nil];
-    maImgsPoliticalParties         = [[NSMutableArray alloc] initWithObjects:
+    DataClass *data=[DataClass getInstance];
+    
+    if (!data.maGovernors) {
+        data.maGovernors             = [[NSMutableArray alloc] initWithObjects:
+                                        @"Carlos Lozano", @"Francisco Vega", @"Marcos Covarrubias", @"Fernando Ortega", @"Rubén Moreira",
+                                        @"Mario Anguiano", @"Manuel Velasco", @"César Duarte", @"Miguel Mancera", @"Jorge Herrera",
+                                        @"Miguel Márquez", @"Salvador Ortega", @"José Olvera", @"Aristóteles Sandoval", @"Eruviel Ávila",
+                                        @"Salvador Jara", @"Graco Ramírez", @"Roberto Sandoval", @"Rodrigo Medina", @"Cabino Cué",
+                                        @"Rafael Moreno", @"José Calzada", @"Roberto Borge", @"Fernando Toranzo", @"Mario López",
+                                        @"Guillermo Padrés", @"Arturo Núnez", @"Egidio Torre", @"Mariano González", @"Javier Duarte",
+                                        @"Rolando Zapata", @"Miguel Alonso", nil];
+    }
+    if (!data.maImgsPoliticalParties) {
+        data.maImgsPoliticalParties         = [[NSMutableArray alloc] initWithObjects:
                                       @"pri.png", @"pan.png", @"pan.png", @"pri.png", @"verde.png",
                                       @"pri.png", @"pri.png", @"pri.png", @"prd.png", @"pri.png",
                                       @"pan.png", @"prd.png", @"pri.png", @"pri.png", @"pri.png",
@@ -51,7 +57,9 @@
                                       @"pan.png", @"pri.png", @"pri.png", @"pri.png", @"pan.png",
                                       @"pan.png", @"prd.png", @"pri.png", @"pri.png", @"pri.png",
                                       @"pri.png", @"pri.png", nil];
-    maStates         = [[NSMutableArray alloc] initWithObjects:
+    }
+    if (!data.maStates) {
+        data.maStates         = [[NSMutableArray alloc] initWithObjects:
                         @"Aguascalientes", @"Baja California", @"Baja California Sur", @"Campeche", @"Chiapas",
                         @"Chihuahua", @"Coahuila", @"Colima", @"Distrito Federal", @"Durango",
                         @"Guanajuato", @"Guerrero", @"Hidalgo", @"Jalisco", @"México",
@@ -59,6 +67,7 @@
                         @"Puebla", @"Querétaro", @"Quintana Roo", @"San Luis Potosí", @"Sinaloa",
                         @"Sonora", @"Tabasco", @"Tamaulipas", @"Tlaxcala", @"Veracruz",
                         @"Yucatán", @"Zacatecas", nil];
+    }
     maImgsPoliticalPartiesList         = [[NSMutableArray alloc] initWithObjects:
                                       @"pri.png", @"pan.png", @"prd.png", @"verde.png", @"mov.png",
                                       @"ind.png", nil];
@@ -86,7 +95,8 @@
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return maGovernors.count;
+    DataClass *data=[DataClass getInstance];
+    return data.maGovernors.count;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,14 +114,16 @@
         cell = (CellNotification *)[tableView dequeueReusableCellWithIdentifier:@"CellNotification"];
         //cell = [[CellNotification alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellNotification"];
     }
-    [cell reloadInputViews];
+//    [cell reloadInputViews];
     //Fill cell with info from arrays
-    cell.lblGovernor.text   = maGovernors[indexPath.row];
-    cell.lblState.text      = maStates[indexPath.row];
-    cell.imgPoliticalParty.image = [UIImage imageNamed:maImgsPoliticalParties[indexPath.row]];
+    DataClass *data=[DataClass getInstance];
+    cell.lblGovernor.text   = data.maGovernors[indexPath.row];
+    cell.lblState.text      = data.maStates[indexPath.row];
+    cell.imgPoliticalParty.image = [UIImage imageNamed:data.maImgsPoliticalParties[indexPath.row]];
     
     return cell;
 }
+
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -127,8 +139,10 @@
 }
 
 - (IBAction)btnRefresh:(id)sender {
+    NSLog(@"btnRefresh pressed");
+    [self.tblMain reloadRowsAtIndexPaths:0 withRowAnimation:UITableViewRowAnimationNone];
+//    [self reloadInputViews];
 //    [self.tblMain reloadData];
 //    [self.tblMain performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-//    [self setNeedsDisplay];
 }
 @end

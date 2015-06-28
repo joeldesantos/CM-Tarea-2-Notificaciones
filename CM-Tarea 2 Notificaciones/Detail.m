@@ -9,6 +9,7 @@
 #import "Detail.h"
 #import "Declarations.h"
 #import "Home.h"
+#import "DataClass.h"
 
 @interface Detail ()
 
@@ -27,10 +28,10 @@
 }
 
 -(void)initController {
-    
-    self.name.text = maGovernors[mGovernorIndex];
-    self.state.text = maStates[mGovernorIndex];
-    self.politicalParty.image = [UIImage imageNamed:maImgsPoliticalParties[mGovernorIndex]];
+    DataClass *data=[DataClass getInstance];
+    self.name.text = data.maGovernors[mGovernorIndex];
+    self.state.text = data.maStates[mGovernorIndex];
+    self.politicalParty.image = [UIImage imageNamed:data.maImgsPoliticalParties[mGovernorIndex]];
     self.politicalParty.frame = CGRectMake(62, 82, 197, 197);
     
 }

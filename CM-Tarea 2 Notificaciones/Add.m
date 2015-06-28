@@ -8,6 +8,7 @@
 
 #import "Add.h"
 #import "Home.h"
+#import "DataClass.h"
 
 @interface Add ()
 
@@ -84,6 +85,17 @@
     self.AddImage.frame = CGRectMake(62, 82, 197, 197);
 }
 
+- (IBAction)btnLeftImageAction:(id)sender {
+    self.imgIndex--;
+    
+    if (self.imgIndex < 0 ) {
+        self.imgIndex = (int)maImgsPoliticalPartiesList.count -1;
+    }
+    
+    self.AddImage.image = [UIImage imageNamed:maImgsPoliticalPartiesList[self.imgIndex]];
+    self.AddImage.frame = CGRectMake(62, 82, 197, 197);
+}
+
 - (IBAction)btnCancelPressed:(id)sender {
     Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
     [self presentViewController:vc animated:YES completion:nil];
@@ -91,16 +103,18 @@
 
 - (IBAction)btnAddPressed:(id)sender {
     
-    [maGovernors insertObject:self.AddName.text atIndex:0];
-    [maImgsPoliticalParties insertObject:maImgsPoliticalPartiesList[self.imgIndex] atIndex:0];
-    [maStates insertObject:self.AddState.text atIndex:0];
+    DataClass *data=[DataClass getInstance];
+    [data.maGovernors insertObject:self.AddName.text atIndex:0];
+    [data.maImgsPoliticalParties insertObject:maImgsPoliticalPartiesList[self.imgIndex] atIndex:0];
+    [data.maStates insertObject:self.AddState.text atIndex:0];
     
-    //NSLog(@"Added", self.AddName.text);
+    //NSLog(data.maGovernors[0]);
     
     Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
     
     [self presentViewController:vc animated:YES completion:^{
         //this code here will execute when modal is done being dismissed
+        NSLog(@"btnAddPressed pressed action completed");
         [vc.tblMain reloadData];
     }];
 }
