@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tblMain;
 - (IBAction)btnAdd:(id)sender;
+- (IBAction)btnRefresh:(id)sender;
 
 @end

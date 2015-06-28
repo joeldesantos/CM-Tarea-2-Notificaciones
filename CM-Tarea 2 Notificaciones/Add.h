@@ -14,23 +14,20 @@
     IBOutlet UIImageView *AddImage;
     
     IBOutlet UITextField *AddName;
-    IBOutlet UITextField *AddParty;
     IBOutlet UITextField *AddState;
-    
-    IBOutlet UIButton *AddButton;
 }
+
+@property int imgIndex;
 
 @property (weak, nonatomic) IBOutlet UIImageView *AddImage;
 - (IBAction)AddImageAction:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *AddName;
-@property (weak, nonatomic) IBOutlet UITextField *AddParty;
 @property (weak, nonatomic) IBOutlet UITextField *AddState;
-
-@property (weak, nonatomic) IBOutlet UIButton *AddButton;
 
 @property (strong, nonatomic) UIDropDownMenu *buttonMenu;
 
 - (IBAction)btnCancelPressed:(id)sender;
+- (IBAction)btnAddPressed:(id)sender;
 
 @end

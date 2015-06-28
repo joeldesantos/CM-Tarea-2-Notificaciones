@@ -48,7 +48,7 @@
                                       @"pri.png", @"pri.png", @"pri.png", @"prd.png", @"pri.png",
                                       @"pan.png", @"prd.png", @"pri.png", @"pri.png", @"pri.png",
                                       @"ind.png", @"prd.png", @"pri.png", @"pri.png", @"mov.png",
-                                      @"pan.png", @"pri.png", @"pri.png", @"pri.ong", @"pan.png",
+                                      @"pan.png", @"pri.png", @"pri.png", @"pri.png", @"pan.png",
                                       @"pan.png", @"prd.png", @"pri.png", @"pri.png", @"pri.png",
                                       @"pri.png", @"pri.png", nil];
     maStates         = [[NSMutableArray alloc] initWithObjects:
@@ -59,7 +59,23 @@
                         @"Puebla", @"Querétaro", @"Quintana Roo", @"San Luis Potosí", @"Sinaloa",
                         @"Sonora", @"Tabasco", @"Tamaulipas", @"Tlaxcala", @"Veracruz",
                         @"Yucatán", @"Zacatecas", nil];
+    maImgsPoliticalPartiesList         = [[NSMutableArray alloc] initWithObjects:
+                                      @"pri.png", @"pan.png", @"prd.png", @"verde.png", @"mov.png",
+                                      @"ind.png", nil];
+    maStatesList         = [[NSMutableArray alloc] initWithObjects:
+                        @"Aguascalientes", @"Baja California", @"Baja California Sur", @"Campeche", @"Chiapas",
+                        @"Chihuahua", @"Coahuila", @"Colima", @"Distrito Federal", @"Durango",
+                        @"Guanajuato", @"Guerrero", @"Hidalgo", @"Jalisco", @"México",
+                        @"Michoacán", @"Morelos", @"Nayarit", @"Nuevo León", @"Oaxaca",
+                        @"Puebla", @"Querétaro", @"Quintana Roo", @"San Luis Potosí", @"Sinaloa",
+                        @"Sonora", @"Tabasco", @"Tamaulipas", @"Tlaxcala", @"Veracruz",
+                        @"Yucatán", @"Zacatecas", nil];
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self.tblMain reloadData];
+}
+
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
 /**********************************************************************************************/
@@ -88,6 +104,7 @@
         cell = (CellNotification *)[tableView dequeueReusableCellWithIdentifier:@"CellNotification"];
         //cell = [[CellNotification alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellNotification"];
     }
+    [cell reloadInputViews];
     //Fill cell with info from arrays
     cell.lblGovernor.text   = maGovernors[indexPath.row];
     cell.lblState.text      = maStates[indexPath.row];
@@ -107,5 +124,11 @@
 - (IBAction)btnAdd:(id)sender {
     Add *detailsView = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Add"];
     [self presentViewController:detailsView animated:YES completion:nil];
+}
+
+- (IBAction)btnRefresh:(id)sender {
+//    [self.tblMain reloadData];
+//    [self.tblMain performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+//    [self setNeedsDisplay];
 }
 @end
