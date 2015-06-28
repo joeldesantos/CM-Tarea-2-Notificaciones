@@ -14,6 +14,7 @@ NSMutableArray  *maIntroImgs;
 NSMutableArray  *maGovernors;
 NSMutableArray  *maStates;
 NSMutableArray  *maImgsPoliticalParties;
+int mGovernorIndex;
 
 @implementation Declarations
 

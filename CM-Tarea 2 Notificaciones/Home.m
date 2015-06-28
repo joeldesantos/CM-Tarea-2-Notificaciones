@@ -8,7 +8,7 @@
 
 #import "Home.h"
 #import "Declarations.h"
-#import "cellNotification.h"
+#import "CellNotification.h"
 #import "Detail.h"
 
 @interface Home ()
@@ -31,6 +31,9 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
+    
+    [self.tblMain registerNib:[UINib nibWithNibName:@"CellNotification" bundle:nil] forCellReuseIdentifier:@"CellNotification"];
+    
     maGovernors             = [[NSMutableArray alloc] initWithObjects:
                                @"Carlos Lozano", @"Francisco Vega", @"Marcos Covarrubias", @"Fernando Ortega", @"Rubén Moreira",
                                @"Mario Anguiano", @"Manuel Velasco", @"César Duarte", @"Miguel Mancera", @"Jorge Herrera",
@@ -77,11 +80,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //Initialize cells
-    cellNotification *cell = (cellNotification *)[tableView dequeueReusableCellWithIdentifier:@"cellNotification"];
+    CellNotification *cell = (CellNotification *)[tableView dequeueReusableCellWithIdentifier:@"CellNotification"];
     
-    if (cell == nil) {
-        [tableView registerNib:[UINib nibWithNibName:@"cellNotification" bundle:nil] forCellReuseIdentifier:@"cellNotifcation"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellNotification"];
+    if (!cell) {
+        [tableView registerNib:[UINib nibWithNibName:@"CellNotification" bundle:nil] forCellReuseIdentifier:@"CellNotification"];
+        cell = (CellNotification *)[tableView dequeueReusableCellWithIdentifier:@"CellNotification"];
+        //cell = [[CellNotification alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellNotification"];
     }
     //Fill cell with info from arrays
     cell.lblGovernor.text   = maGovernors[indexPath.row];
