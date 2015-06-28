@@ -31,4 +31,6 @@
 
 @property (strong, nonatomic) UIDropDownMenu *buttonMenu;
 
+- (IBAction)btnCancelPressed:(id)sender;
+
 @end

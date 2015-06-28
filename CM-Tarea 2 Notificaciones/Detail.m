@@ -8,6 +8,7 @@
 
 #import "Detail.h"
 #import "Declarations.h"
+#import "Home.h"
 
 @interface Detail ()
 
@@ -26,17 +27,11 @@
 }
 
 -(void)initController {
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone
-                            target:self
-                            action:@selector(closeThisView:)];
     
-    UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:maGovernors[1]];
-    item.rightBarButtonItem = backButton;
-    item.hidesBackButton = YES;
-    [self.navigationView pushNavigationItem:item animated:NO];
-    
-    self.navigationItem.rightBarButtonItem = backButton;
-
+    self.name.text = maGovernors[mGovernorIndex];
+    self.state.text = maStates[mGovernorIndex];
+    self.politicalParty.image = [UIImage imageNamed:maImgsPoliticalParties[mGovernorIndex]];
+    self.politicalParty.frame = CGRectMake(62, 82, 197, 197);
     
 }
 /*
@@ -48,5 +43,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)btnDone:(id)sender {
+    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)btnNavDone:(id)sender {
+    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

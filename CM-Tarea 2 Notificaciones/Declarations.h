@@ -12,6 +12,7 @@ extern NSMutableArray   *maIntroTitles;
 extern NSMutableArray   *maIntroImgs;
 extern NSMutableArray   *maGovernors;
 extern NSMutableArray   *maStates;
+extern NSMutableArray   *maStatesList;
 extern NSMutableArray   *maImgsPoliticalParties;
 extern int mGovernorIndex;
 

@@ -10,10 +10,11 @@
 
 @interface Detail : UIViewController
 
-@property (weak, nonatomic) IBOutlet UINavigationBar *navigationView;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UIImageView *politicalParty;
 @property (weak, nonatomic) IBOutlet UILabel *state;
-//
+
+- (IBAction)btnDone:(id)sender;
+- (IBAction)btnNavDone:(id)sender;
 
 @end

@@ -10,6 +10,7 @@
 #import "Declarations.h"
 #import "CellNotification.h"
 #import "Detail.h"
+#import "Add.h"
 
 @interface Home ()
 
@@ -100,6 +101,11 @@
     mGovernorIndex = (int) indexPath.row;
     Detail *detailsView = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Detail"];
     
+    [self presentViewController:detailsView animated:YES completion:nil];
+}
+
+- (IBAction)btnAdd:(id)sender {
+    Add *detailsView = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Add"];
     [self presentViewController:detailsView animated:YES completion:nil];
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "Add.h"
+#import "Home.h"
 
 @interface Add ()
 
@@ -35,8 +36,8 @@
     self.buttonMenu = [[UIDropDownMenu alloc] initWithIdentifier:@"buttonMenu"];
     self.buttonMenu.ScaleToFitParent = FALSE;
     self.buttonMenu.menuWidth = 200;
-    self.buttonMenu.titleArray = maStates;
-    self.buttonMenu.valueArray = maStates;
+    self.buttonMenu.titleArray = maStatesList;
+    self.buttonMenu.valueArray = maStatesList;
     [self.buttonMenu makeMenu:AddState targetView:self.view];
     self.buttonMenu.delegate = self;
 }
@@ -59,5 +60,12 @@
 */
 
 - (IBAction)AddImageAction:(id)sender {
+    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)btnCancelPressed:(id)sender {
+    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 @end
